@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countdown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="countdown" style="display:none"></div>
+        <div id="inputFields">
+            <label for="hours"><p>Hours : </p><input type="number" min="0" oninput="this.value = Math.abs(this.value)" name="hours" id="hours"></label>
+            <label for="minutes"><p>Minutes : </p><input type="number" min="0" oninput="this.value = Math.abs(this.value)" name="minutes" id="minutes"></label>
+            <label for="seconds"><p>Seconds</p><input type="number" min="0" oninput="this.value = Math.abs(this.value)" name="seconds" id="seconds"></label>
+        </div>
+        <div id="buttons">
+            <button class="btn btn-success btn-lg" id="startButton">Start</button>
+            <button class="btn btn-warning btn-lg" id="pauseButton" style="display:none">Pause</button>
+            <button class="btn btn-info btn-lg" id="resetButton">Reset</button>
+            <button class="btn btn-info btn-lg" id="newTimerButton">Set New Timer</button>
+        </div>
+        
+
+        
+    </div>
+    
+
+    <script src="script.js"></script>    
+</body>
+</html>
